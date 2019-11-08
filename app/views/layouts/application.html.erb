@@ -8,6 +8,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <div id="side_menu">
+    <ul id="side_ul">
+      <li class="side_li"><%= link_to "TOP", :root%></li>
+      <li class="side_li"><%= link_to "CHAT", "#"%></li>
+      <li class="side_li"><%= link_to "BLOG", "#" %></li>
+    </ul>
+  </div>
+  <div id="right_menu">
+    <p id="side-log"><%= link_to "ログイン", "#"%></p>
+    <p id="side-log"><%= link_to "新規登録", new_user_registration_path %></p>
+  </div>
 
   <body>
     <%= yield %>

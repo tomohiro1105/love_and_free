@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root "travelers#top"
+  devise_for :users
+  root "blogs#top"
+  get "new_user_registration" => "devise/registrations#new"
+  resources :blogs, only: [:index]
 end

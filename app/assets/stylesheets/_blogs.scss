@@ -10,6 +10,29 @@ body{
   background-position: center;
 }
 
+#side_menu{
+  display: inline-block;
+}
+
+
+
+.side_li{
+  margin: 30px 0px 5px 20px;
+  font-weight: bold;
+}
+
+#right_menu{
+  display: inline-block;
+  position: relative;
+  left:85%;
+  bottom:20px
+}
+
+#side-log{
+  margin: 30px 0px 5px 0px;
+  font-size: 20px;
+}
+
 #top-title{
   width: 50%;
   height: 50%;
@@ -27,4 +50,16 @@ body{
 
 #top-btn{
   font-size: 50px;
+}
+
+a:link{
+  color: #00c;
+}
+
+a:visited{
+  color: wheat;
+}
+
+a:hover{
+  color: #00c;
 }
